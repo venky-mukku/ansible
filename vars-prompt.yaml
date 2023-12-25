@@ -5,7 +5,7 @@
     prompt: plz enter username
     private: false
   - name: PASSWD
-    prompr: plz enter passwd
+    prompt: plz enter passwd
     private: true 
   tasks: 
   - name: print and check the valves
