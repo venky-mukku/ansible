@@ -10,4 +10,4 @@
   tasks: 
   - name: print and check the valves
     ansible.builtin.debug:
-    msg: "username is {{USERNAME}}, passwd is {{PASSWD}}"
+      msg: "username is {{USERNAME}}, passwd is {{PASSWD}}"
