@@ -2,8 +2,8 @@
   hosts: web
   vars_files:
     variables.yml
-tasks:
-- name: check variables
-  ansible.builtin.debug:
-    msg: "hi , i am learning {{cource}}"
-  
+  tasks:
+  - name: check variables
+    ansible.builtin.debug:
+      msg: "hi , i am learning {{cource}}"
+    
