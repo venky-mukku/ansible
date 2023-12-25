@@ -1,0 +1,13 @@
+- name: variables from prompt
+  hosts: web
+  vars_prompt:
+  - name: USERNAME
+    prompt: plz enter username
+    private: false
+  - name: PASSWD
+    prompr: plz enter passwd
+    private: true 
+  tasks: 
+  - name: print and check the valves
+    ansible.builtin.debug:
+    msg: "username is {{USERNAME}}, passwd is {{PASSWD}}"
