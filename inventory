@@ -2,5 +2,6 @@
 [web]
 3.95.218.25
 18.232.81.223
+[web:vars]
 
-
+cource="devops from vars"
