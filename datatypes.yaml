@@ -1,0 +1,24 @@
+- name: checking data types
+  host: web
+  vars:
+    name: venky
+    skills: #skills are list type
+    - devops
+    - aws
+    - linux
+    experience: # experience are the map type
+      devops: 7
+      aws: 3
+      docker: 4
+    trainer: true # boolean 
+  tasks: 
+  - name: print key valve pair
+    ansible.builtin.debug:
+      msg: "name is {{name}}"
+
+  - name: print list
+    ansible.builtin.debug:
+      msg: "skills is {{skills}}"
+  - name: print of map experience
+    ansible.builtin.debug:
+      msg: "user experience is {{experience}}"
