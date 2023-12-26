@@ -8,3 +8,6 @@
     ansible.builtin.debug:
       msg: "user is {{user}}"
 
+  - name: check the exit code or rerurn status
+    ansible.builtin.debug:
+      msg: "user is {{user.rc}}"
