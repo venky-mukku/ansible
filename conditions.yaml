@@ -1,16 +1,17 @@
 - name: check the condions
   hosts: web
+  become: yes
   tasks:
   - name: check the user exists or not
     ansible.builtin.command: id roboshop
     register: user
   - name: print the user status
     ansible.builtin.debug:
-      msg: "user is {{user}}"
+      msg: "user is: {{user}}"
 
   - name: check the exit code or rerurn status
     ansible.builtin.debug:
-      msg: "user is {{user.rc}}"
+      msg: "user is: {{user.rc}}"
 
   - name: create user
     ansible.builtin.user:
