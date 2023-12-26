@@ -11,3 +11,9 @@
   - name: check the exit code or rerurn status
     ansible.builtin.debug:
       msg: "user is {{user.rc}}"
+
+  - name: check the exit code or rerurn status
+    ansible.builtin.user:
+      name: roboshop
+    when: user.rc != "0"
+
