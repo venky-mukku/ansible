@@ -1,5 +1,5 @@
 - name: checking data types
-  hosts: localhost
+  hosts: web
   vars:
     name: venky
     skills: #skills are list type
