@@ -2,6 +2,3 @@
 [web]
 3.81.168.172
 52.90.31.31
-[web:vars]
-
-cource="devops from vars"
