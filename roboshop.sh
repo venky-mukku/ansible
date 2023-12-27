@@ -1,7 +1,7 @@
 #!/bin/bash
 
 AMI=ami-03265a0778a880afb
-SG_ID=sg-083da873b45f8805d #replace with your SG ID
+SG_ID=sg-08d31e672acd8095a #replace with your SG ID
 INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
 ZONE_ID="use1-az6" # replace your zone ID
 DOMAIN_NAME="venkydevops.co"
