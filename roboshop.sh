@@ -3,7 +3,7 @@
 AMI=ami-03265a0778a880afb
 SG_ID=subnet-064232e9e45d1d7e7 #replace with your SG ID
 INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
-ZONE_ID="use1-az6" # replace your zone ID
+ZONE_ID=use1-az6 # replace your zone ID
 DOMAIN_NAME="venkydevops.co"
 
 for i in "${INSTANCES[@]}"
